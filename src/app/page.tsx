@@ -25,13 +25,22 @@ export default function HomePage() {
   return (
     <main className="p-4 text-center text-3xl font-bold">
       <section>
-        <h2>Technologies</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Tailwind</li>
+        <h2 className="mb-4">Technologies</h2>
+
+        <ul className="columns-2">
+          <li className="mb-4">HTML</li>
+          <li className="mb-4">CSS</li>
+          <li className="mb-4">JavaScript</li>
+          <li className="mb-4">TypeScript</li>
+          <li className="mb-4">MongoDB</li>
+          <li className="mb-4">Express</li>
+          <li className="mb-4">React</li>
+          <li className="mb-4">Node.js</li>
+          <li className="mb-4">Next.js</li>
+          <li className="mb-4">Tailwind</li>
+          <li className="mb-4">Prisma</li>
+          <li className="mb-4">Mongoose</li>
+          <li className="mb-4">PostgreSQL</li>
         </ul>
       </section>
       <br />
@@ -41,7 +50,9 @@ export default function HomePage() {
         <ul>
           {Object.entries(projects).map(([projectName, projectLink]) => (
             <li key={projectName}>
-              <Link href={projectLink}>{projectName}</Link>
+              <Link className="hover:opacity-90" href={projectLink}>
+                {projectName}
+              </Link>
             </li>
           ))}
         </ul>

@@ -25,9 +25,20 @@ export default function HomePage() {
   return (
     <main className="p-4 text-center text-3xl font-bold">
       <section>
+        {/* List of languages */}
+        <h2>Languages</h2>
+        <ul className="border">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>Python</li>
+          <li>Ruby</li>
+        </ul>
+
         <h2 className="mb-4">Technologies</h2>
 
-        <ul className="columns-2">
+        <ul className="columns-3 text-left">
           <li className="mb-4">HTML</li>
           <li className="mb-4">CSS</li>
           <li className="mb-4">JavaScript</li>
